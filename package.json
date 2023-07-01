@@ -1,0 +1,48 @@
+{
+  "name": "@sleekstack/state",
+  "version": "0.0.1",
+  "description": "Universal state system",
+  "author": "Alireza Hamoony <ubtik@outlook.com>",
+  "license": "MIT",
+  "funding": "https://github.com/sponsors/sleekstack",
+  "homepage": "https://github.com/sleekstack/state",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sleekstack/state"
+  },
+  "bugs": {
+    "url": "https://github.com/sleekstack/state/issues"
+  },
+  "keywords": [
+    "state",
+    "state-management"
+  ],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.mjs"
+    }
+  },
+  "main": "dist/index.cjs",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "unbuild",
+    "stub": "unbuild --stub",
+    "test": "vitest",
+    "test:update": "vitest -u",
+    "release": "bumpp"
+  },
+  "devDependencies": {
+    "unbuild": "^1.2.1",
+    "@antfu/eslint-config": "^0.39.5",
+    "eslint": "^8.43.0",
+    "vitest": "^0.32.2",
+    "bumpp": "^9.1.1"
+  }
+}
